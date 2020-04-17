@@ -1,0 +1,134 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Indie Flower", sans-serif;
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto 0px;
+
+}
+
+header {
+  background: url(peacock.jpg);
+  background-size: cover;
+  height: 40vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+nav>ul>li {
+  padding: 5px;
+
+}
+
+.headertitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+
+}
+
+@media only screen and (max width:768px) {
+    .main-nav {
+      font-size: 0.5em;
+      padding: 0;
+    }
+  }
+
+.green {
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+
+}
+
+.tabs {
+  text-decoration: none;
+  color: white;
+  border: 2px solid green;
+  display: flex;
+  text-align: center;
+  transition-duration: 1s;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 10px;
+  margin: 0px;
+  font-family: "Indie Flower";
+  padding: 5px;
+
+}
+
+.tabs:hover {
+  background: lightgreen;
+  box-shadow: 2px 2px 6px darkgreen;
+  -webkit-box-shadow: 2px 2px 6px darkgreen;
+  -moz-box-shadow: 2px 2px 6px darkgreen;
+  -o-box-shadow: 2px 2px 6px darkgreen;
+  transition-duration: 0.5s;
+}
+
+.headertxt {
+  font-size: 1.7rem;
+  font-family: "Indie Flower";
+  text-shadow: 10px 10px 8px black;
+  color: white;
+}
+
+.pagecontent {
+  color: black;
+  background: #7A946C;
+  background: #56B870; /* Old browsers */
+  background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);
+  background: -webkit-linear-gradient(top, #56B870 15%,#a5c956 100%);
+  background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%);
+  background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%);
+  background: linear-gradient(top, #56B870 0%,#a5c956 100%);
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  text-shadow: 3px 3px 8px black;
+
+}
+
+.pagecontent:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  transform: scale(1.05);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+}
+
+p {
+  text-indent: 30px;
+}
